@@ -20,7 +20,7 @@ const primaryRoadsGroup = L.layerGroup().addTo(map);
 const citiesGroup = L.layerGroup().addTo(map);
 
 //Polygons: Federal Land 
-fetch('./data/nm_projfedlands_FeaturesToJSO.geojson')
+fetch('./data/nm__projfedlands_FeaturesToJSO.geojson')
   .then(response => response.json())
   .then(data => {
     L.geoJSON(data, {
