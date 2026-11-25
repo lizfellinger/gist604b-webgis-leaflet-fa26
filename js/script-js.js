@@ -20,7 +20,7 @@ const primaryRoadsGroup = L.layerGroup().addTo(map);
 const citiesGroup = L.layerGroup().addTo(map);
 
 //Polygons: Federal Land 
-fetch('C:\\GIS_MS\\opensource_w6\\gist604b-webgis-leaflet-fa26\\data\\federal_land.geojson')
+fetch('./data/federal_land.geojson')
   .then(response => response.json())
   .then(data => {
     L.geoJSON(data, {
@@ -46,7 +46,7 @@ fetch('C:\\GIS_MS\\opensource_w6\\gist604b-webgis-leaflet-fa26\\data\\federal_la
   .catch(err => console.error("Error loading Federal Land:", err));
 
 //Lines: Primary Roads 
-fetch('C:\\GIS_MS\\opensource_w6\\gist604b-webgis-leaflet-fa26\\data\\nm_roads_proj_FeaturesToJSO.geojson')
+fetch('./data/nm_roads_proj_FeaturesToJSO.geojson')
   .then(response => response.json())
   .then(data => {
     L.geoJSON(data, {
@@ -71,7 +71,7 @@ fetch('C:\\GIS_MS\\opensource_w6\\gist604b-webgis-leaflet-fa26\\data\\nm_roads_p
   .catch(err => console.error("Error loading Primary Roads:", err));
 
 // Points: Cities
-fetch('C:\\GIS_MS\\opensource_w6\\gist604b-webgis-leaflet-fa26\\data\\nm_cities_proj_FeaturesToJSO.geojson')
+fetch('./data/nm_cities_proj_FeaturesToJSO.geojson')
   .then(response => response.json())
   .then(data => {
     L.geoJSON(data, {
