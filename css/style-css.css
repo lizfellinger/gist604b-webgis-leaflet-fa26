@@ -1,0 +1,45 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full-screen flex layout for header, map, and footer */
+html, body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #1b4332;
+  color: #ffffff;
+  padding: 12px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+}
+
+header p {
+  font-size: 0.9rem;
+  color: #d8f3dc;
+}
+
+/* Have Map Fill all remaining vertical space */
+#map {
+  flex: 1;
+  width: 100%;
+}
+
+footer {
+  background-color: #2b2d42;
+  color: #edf2f4;
+  text-align: center;
+  padding: 8px 15px;
+  font-size: 0.8rem;
+}
